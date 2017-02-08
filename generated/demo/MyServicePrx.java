@@ -57,4 +57,22 @@ public interface MyServicePrx extends Ice.ObjectPrx
     public Ice.AsyncResult begin_say(java.util.Map<String, String> __ctx, Callback_MyService_say __cb);
 
     public String end_say(Ice.AsyncResult __result);
+
+    public String sendMsg();
+
+    public String sendMsg(java.util.Map<String, String> __ctx);
+
+    public Ice.AsyncResult begin_sendMsg();
+
+    public Ice.AsyncResult begin_sendMsg(java.util.Map<String, String> __ctx);
+
+    public Ice.AsyncResult begin_sendMsg(Ice.Callback __cb);
+
+    public Ice.AsyncResult begin_sendMsg(java.util.Map<String, String> __ctx, Ice.Callback __cb);
+
+    public Ice.AsyncResult begin_sendMsg(Callback_MyService_sendMsg __cb);
+
+    public Ice.AsyncResult begin_sendMsg(java.util.Map<String, String> __ctx, Callback_MyService_sendMsg __cb);
+
+    public String end_sendMsg(Ice.AsyncResult __result);
 }

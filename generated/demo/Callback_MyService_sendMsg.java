@@ -20,11 +20,23 @@
 
 package demo;
 
-public interface _MyServiceOperationsNC
+public abstract class Callback_MyService_sendMsg extends Ice.TwowayCallback
 {
-    String hellow();
+    public abstract void response(String __ret);
 
-    String say();
-
-    String sendMsg();
+    public final void __completed(Ice.AsyncResult __result)
+    {
+        MyServicePrx __proxy = (MyServicePrx)__result.getProxy();
+        String __ret = null;
+        try
+        {
+            __ret = __proxy.end_sendMsg(__result);
+        }
+        catch(Ice.LocalException __ex)
+        {
+            exception(__ex);
+            return;
+        }
+        response(__ret);
+    }
 }

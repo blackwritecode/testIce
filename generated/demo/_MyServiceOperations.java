@@ -25,4 +25,6 @@ public interface _MyServiceOperations
     String hellow(Ice.Current __current);
 
     String say(Ice.Current __current);
+
+    String sendMsg(Ice.Current __current);
 }

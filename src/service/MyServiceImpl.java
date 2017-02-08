@@ -22,4 +22,10 @@ public class MyServiceImpl extends _MyServiceDisp {
 		return "Server" + 1;
 	}
 
+	@Override
+	public String sendMsg(Current __current) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 }

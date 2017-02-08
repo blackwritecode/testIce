@@ -80,6 +80,11 @@ public abstract class _MyServiceDisp extends Ice.ObjectImpl implements MyService
         return say(null);
     }
 
+    public final String sendMsg()
+    {
+        return sendMsg(null);
+    }
+
     public static Ice.DispatchStatus ___hellow(MyService __obj, IceInternal.Incoming __inS, Ice.Current __current)
     {
         __checkMode(Ice.OperationMode.Normal, __current.mode);
@@ -102,6 +107,17 @@ public abstract class _MyServiceDisp extends Ice.ObjectImpl implements MyService
         return Ice.DispatchStatus.DispatchOK;
     }
 
+    public static Ice.DispatchStatus ___sendMsg(MyService __obj, IceInternal.Incoming __inS, Ice.Current __current)
+    {
+        __checkMode(Ice.OperationMode.Normal, __current.mode);
+        __inS.readEmptyParams();
+        String __ret = __obj.sendMsg(__current);
+        IceInternal.BasicStream __os = __inS.__startWriteParams(Ice.FormatType.DefaultFormat);
+        __os.writeString(__ret);
+        __inS.__endWriteParams(true);
+        return Ice.DispatchStatus.DispatchOK;
+    }
+
     private final static String[] __all =
     {
         "hellow",
@@ -109,7 +125,8 @@ public abstract class _MyServiceDisp extends Ice.ObjectImpl implements MyService
         "ice_ids",
         "ice_isA",
         "ice_ping",
-        "say"
+        "say",
+        "sendMsg"
     };
 
     public Ice.DispatchStatus __dispatch(IceInternal.Incoming in, Ice.Current __current)
@@ -145,6 +162,10 @@ public abstract class _MyServiceDisp extends Ice.ObjectImpl implements MyService
             case 5:
             {
                 return ___say(this, in, __current);
+            }
+            case 6:
+            {
+                return ___sendMsg(this, in, __current);
             }
         }
 
