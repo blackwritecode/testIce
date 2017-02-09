@@ -1,5 +1,4 @@
-import service.MyServiceImpl;
-
+package service;
 public class MyServiceStarter {
 
 	public static void main(String[] args) {

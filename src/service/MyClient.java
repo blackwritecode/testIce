@@ -1,3 +1,4 @@
+package service;
 import demo.MyServicePrx;
 import demo.MyServicePrxHelper;
 
