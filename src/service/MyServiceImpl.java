@@ -1,7 +1,8 @@
 package service;
 
+import com.ls.demo.demo._MyServiceDisp;
+
 import Ice.Current;
-import demo._MyServiceDisp;
 
 public class MyServiceImpl extends _MyServiceDisp {
 
@@ -14,18 +15,6 @@ public class MyServiceImpl extends _MyServiceDisp {
 	public String hellow(Current __current) {
 		// TODO Auto-generated method stub
 		return "Hello world";
-	}
-
-	@Override
-	public String say(Current __current) {
-		// TODO Auto-generated method stub
-		return "Server" + 1;
-	}
-
-	@Override
-	public String sendMsg(Current __current) {
-		// TODO Auto-generated method stub
-		return null;
 	}
 
 }
