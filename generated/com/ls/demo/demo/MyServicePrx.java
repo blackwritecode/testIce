@@ -22,21 +22,21 @@ package com.ls.demo.demo;
 
 public interface MyServicePrx extends Ice.ObjectPrx
 {
-    public String hellow();
+    public String hello();
 
-    public String hellow(java.util.Map<String, String> __ctx);
+    public String hello(java.util.Map<String, String> __ctx);
 
-    public Ice.AsyncResult begin_hellow();
+    public Ice.AsyncResult begin_hello();
 
-    public Ice.AsyncResult begin_hellow(java.util.Map<String, String> __ctx);
+    public Ice.AsyncResult begin_hello(java.util.Map<String, String> __ctx);
 
-    public Ice.AsyncResult begin_hellow(Ice.Callback __cb);
+    public Ice.AsyncResult begin_hello(Ice.Callback __cb);
 
-    public Ice.AsyncResult begin_hellow(java.util.Map<String, String> __ctx, Ice.Callback __cb);
+    public Ice.AsyncResult begin_hello(java.util.Map<String, String> __ctx, Ice.Callback __cb);
 
-    public Ice.AsyncResult begin_hellow(Callback_MyService_hellow __cb);
+    public Ice.AsyncResult begin_hello(Callback_MyService_hello __cb);
 
-    public Ice.AsyncResult begin_hellow(java.util.Map<String, String> __ctx, Callback_MyService_hellow __cb);
+    public Ice.AsyncResult begin_hello(java.util.Map<String, String> __ctx, Callback_MyService_hello __cb);
 
-    public String end_hellow(Ice.AsyncResult __result);
+    public String end_hello(Ice.AsyncResult __result);
 }

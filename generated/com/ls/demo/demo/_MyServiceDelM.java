@@ -23,10 +23,10 @@ package com.ls.demo.demo;
 public final class _MyServiceDelM extends Ice._ObjectDelM implements _MyServiceDel
 {
     public String
-    hellow(java.util.Map<String, String> __ctx, Ice.Instrumentation.InvocationObserver __observer)
+    hello(java.util.Map<String, String> __ctx, Ice.Instrumentation.InvocationObserver __observer)
         throws IceInternal.LocalExceptionWrapper
     {
-        IceInternal.Outgoing __og = __handler.getOutgoing("hellow", Ice.OperationMode.Normal, __ctx, __observer);
+        IceInternal.Outgoing __og = __handler.getOutgoing("hello", Ice.OperationMode.Normal, __ctx, __observer);
         try
         {
             __og.writeEmptyParams();

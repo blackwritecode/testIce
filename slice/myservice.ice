@@ -1,7 +1,7 @@
 [["java:package:com.ls.demo"]]
 module demo{
 	interface MyService{
-		string hellow();
+		string hello();
 	};
 };
 

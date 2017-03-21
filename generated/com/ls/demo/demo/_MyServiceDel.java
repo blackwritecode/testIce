@@ -22,6 +22,6 @@ package com.ls.demo.demo;
 
 public interface _MyServiceDel extends Ice._ObjectDel
 {
-    String hellow(java.util.Map<String, String> __ctx, Ice.Instrumentation.InvocationObserver __obsv)
+    String hello(java.util.Map<String, String> __ctx, Ice.Instrumentation.InvocationObserver __obsv)
         throws IceInternal.LocalExceptionWrapper;
 }

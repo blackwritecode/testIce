@@ -20,7 +20,7 @@ public class MyClient {
 			}
 			
 			// 调用服务方法
-			String rt = prxy.hellow();
+			String rt = prxy.hello();
 //			String str = prxy.say();
 			System.out.println(rt);
 //			System.out.println(str);

@@ -20,7 +20,7 @@
 
 package com.ls.demo.demo;
 
-public abstract class Callback_MyService_hellow extends Ice.TwowayCallback
+public abstract class Callback_MyService_hello extends Ice.TwowayCallback
 {
     public abstract void response(String __ret);
 
@@ -30,7 +30,7 @@ public abstract class Callback_MyService_hellow extends Ice.TwowayCallback
         String __ret = null;
         try
         {
-            __ret = __proxy.end_hellow(__result);
+            __ret = __proxy.end_hello(__result);
         }
         catch(Ice.LocalException __ex)
         {

@@ -22,5 +22,5 @@ package com.ls.demo.demo;
 
 public interface _MyServiceOperationsNC
 {
-    String hellow();
+    String hello();
 }

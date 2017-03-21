@@ -22,5 +22,5 @@ package com.ls.demo.demo;
 
 public interface _MyServiceOperations
 {
-    String hellow(Ice.Current __current);
+    String hello(Ice.Current __current);
 }

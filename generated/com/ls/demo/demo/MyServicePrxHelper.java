@@ -22,25 +22,25 @@ package com.ls.demo.demo;
 
 public final class MyServicePrxHelper extends Ice.ObjectPrxHelperBase implements MyServicePrx
 {
-    private static final String __hellow_name = "hellow";
+    private static final String __hello_name = "hello";
 
-    public String hellow()
+    public String hello()
     {
-        return hellow(null, false);
+        return hello(null, false);
     }
 
-    public String hellow(java.util.Map<String, String> __ctx)
+    public String hello(java.util.Map<String, String> __ctx)
     {
-        return hellow(__ctx, true);
+        return hello(__ctx, true);
     }
 
-    private String hellow(java.util.Map<String, String> __ctx, boolean __explicitCtx)
+    private String hello(java.util.Map<String, String> __ctx, boolean __explicitCtx)
     {
         if(__explicitCtx && __ctx == null)
         {
             __ctx = _emptyContext;
         }
-        final Ice.Instrumentation.InvocationObserver __observer = IceInternal.ObserverHelper.get(this, "hellow", __ctx);
+        final Ice.Instrumentation.InvocationObserver __observer = IceInternal.ObserverHelper.get(this, "hello", __ctx);
         int __cnt = 0;
         try
         {
@@ -49,10 +49,10 @@ public final class MyServicePrxHelper extends Ice.ObjectPrxHelperBase implements
                 Ice._ObjectDel __delBase = null;
                 try
                 {
-                    __checkTwowayOnly("hellow");
+                    __checkTwowayOnly("hello");
                     __delBase = __getDelegate(false);
                     _MyServiceDel __del = (_MyServiceDel)__delBase;
-                    return __del.hellow(__ctx, __observer);
+                    return __del.hello(__ctx, __observer);
                 }
                 catch(IceInternal.LocalExceptionWrapper __ex)
                 {
@@ -73,43 +73,43 @@ public final class MyServicePrxHelper extends Ice.ObjectPrxHelperBase implements
         }
     }
 
-    public Ice.AsyncResult begin_hellow()
+    public Ice.AsyncResult begin_hello()
     {
-        return begin_hellow(null, false, null);
+        return begin_hello(null, false, null);
     }
 
-    public Ice.AsyncResult begin_hellow(java.util.Map<String, String> __ctx)
+    public Ice.AsyncResult begin_hello(java.util.Map<String, String> __ctx)
     {
-        return begin_hellow(__ctx, true, null);
+        return begin_hello(__ctx, true, null);
     }
 
-    public Ice.AsyncResult begin_hellow(Ice.Callback __cb)
+    public Ice.AsyncResult begin_hello(Ice.Callback __cb)
     {
-        return begin_hellow(null, false, __cb);
+        return begin_hello(null, false, __cb);
     }
 
-    public Ice.AsyncResult begin_hellow(java.util.Map<String, String> __ctx, Ice.Callback __cb)
+    public Ice.AsyncResult begin_hello(java.util.Map<String, String> __ctx, Ice.Callback __cb)
     {
-        return begin_hellow(__ctx, true, __cb);
+        return begin_hello(__ctx, true, __cb);
     }
 
-    public Ice.AsyncResult begin_hellow(Callback_MyService_hellow __cb)
+    public Ice.AsyncResult begin_hello(Callback_MyService_hello __cb)
     {
-        return begin_hellow(null, false, __cb);
+        return begin_hello(null, false, __cb);
     }
 
-    public Ice.AsyncResult begin_hellow(java.util.Map<String, String> __ctx, Callback_MyService_hellow __cb)
+    public Ice.AsyncResult begin_hello(java.util.Map<String, String> __ctx, Callback_MyService_hello __cb)
     {
-        return begin_hellow(__ctx, true, __cb);
+        return begin_hello(__ctx, true, __cb);
     }
 
-    private Ice.AsyncResult begin_hellow(java.util.Map<String, String> __ctx, boolean __explicitCtx, IceInternal.CallbackBase __cb)
+    private Ice.AsyncResult begin_hello(java.util.Map<String, String> __ctx, boolean __explicitCtx, IceInternal.CallbackBase __cb)
     {
-        __checkAsyncTwowayOnly(__hellow_name);
-        IceInternal.OutgoingAsync __result = new IceInternal.OutgoingAsync(this, __hellow_name, __cb);
+        __checkAsyncTwowayOnly(__hello_name);
+        IceInternal.OutgoingAsync __result = new IceInternal.OutgoingAsync(this, __hello_name, __cb);
         try
         {
-            __result.__prepare(__hellow_name, Ice.OperationMode.Normal, __ctx, __explicitCtx);
+            __result.__prepare(__hello_name, Ice.OperationMode.Normal, __ctx, __explicitCtx);
             __result.__writeEmptyParams();
             __result.__send(true);
         }
@@ -120,9 +120,9 @@ public final class MyServicePrxHelper extends Ice.ObjectPrxHelperBase implements
         return __result;
     }
 
-    public String end_hellow(Ice.AsyncResult __result)
+    public String end_hello(Ice.AsyncResult __result)
     {
-        Ice.AsyncResult.__check(__result, this, __hellow_name);
+        Ice.AsyncResult.__check(__result, this, __hello_name);
         boolean __ok = __result.__wait();
         try
         {

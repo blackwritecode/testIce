@@ -70,16 +70,16 @@ public abstract class _MyServiceDisp extends Ice.ObjectImpl implements MyService
         return __ids[1];
     }
 
-    public final String hellow()
+    public final String hello()
     {
-        return hellow(null);
+        return hello(null);
     }
 
-    public static Ice.DispatchStatus ___hellow(MyService __obj, IceInternal.Incoming __inS, Ice.Current __current)
+    public static Ice.DispatchStatus ___hello(MyService __obj, IceInternal.Incoming __inS, Ice.Current __current)
     {
         __checkMode(Ice.OperationMode.Normal, __current.mode);
         __inS.readEmptyParams();
-        String __ret = __obj.hellow(__current);
+        String __ret = __obj.hello(__current);
         IceInternal.BasicStream __os = __inS.__startWriteParams(Ice.FormatType.DefaultFormat);
         __os.writeString(__ret);
         __inS.__endWriteParams(true);
@@ -88,7 +88,7 @@ public abstract class _MyServiceDisp extends Ice.ObjectImpl implements MyService
 
     private final static String[] __all =
     {
-        "hellow",
+        "hello",
         "ice_id",
         "ice_ids",
         "ice_isA",
@@ -107,7 +107,7 @@ public abstract class _MyServiceDisp extends Ice.ObjectImpl implements MyService
         {
             case 0:
             {
-                return ___hellow(this, in, __current);
+                return ___hello(this, in, __current);
             }
             case 1:
             {

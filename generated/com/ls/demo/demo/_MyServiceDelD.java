@@ -22,11 +22,11 @@ package com.ls.demo.demo;
 
 public final class _MyServiceDelD extends Ice._ObjectDelD implements _MyServiceDel
 {
-    public String hellow(java.util.Map<String, String> __ctx, Ice.Instrumentation.InvocationObserver __observer)
+    public String hello(java.util.Map<String, String> __ctx, Ice.Instrumentation.InvocationObserver __observer)
         throws IceInternal.LocalExceptionWrapper
     {
         final Ice.Current __current = new Ice.Current();
-        __initCurrent(__current, "hellow", Ice.OperationMode.Normal, __ctx);
+        __initCurrent(__current, "hello", Ice.OperationMode.Normal, __ctx);
         final Ice.StringHolder __result = new Ice.StringHolder();
         IceInternal.Direct __direct = null;
         try
@@ -44,7 +44,7 @@ public final class _MyServiceDelD extends Ice._ObjectDelD implements _MyServiceD
                     {
                         throw new Ice.OperationNotExistException(__current.id, __current.facet, __current.operation);
                     }
-                    __result.value = __servant.hellow(__current);
+                    __result.value = __servant.hello(__current);
                     return Ice.DispatchStatus.DispatchOK;
                 }
             };

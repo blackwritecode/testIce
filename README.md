@@ -1,2 +1,3 @@
 # testIce
-Ice Demo
+Ice Hello Demo.
+需要先搭建好IceGrid开发环境。
